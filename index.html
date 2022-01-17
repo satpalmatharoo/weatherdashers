@@ -5,11 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>WeatherDashers</h1>
+    <section> 
+        <h1>WeatherDashers</h1>
+    </section>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h2> Search for a City: </h2>
+                <form class="m-2">
+                    <label for="searchbar" class="form-label">Search for a city:</label>
+                    <input type="text" id="searchbar" class="form-control mb-2" placeholder="Search!">
+                    <button class="btn btn-primary" type="submit" id="submit">Search</button>
+                    
+                </form>
+                <hr>
+                <div class="row m-1">
+                    <button class="btn btn-outline-danger" id="clear-button">Clear Searches</button>
+                </div>
+                <div id="past-searches">
+
+                </div>
+
+            </div>
+            <div class="col-md-9">
+                <div id="today-forecast" class="m-2 p-1 card">
+                    <div class="card-body">
+                        <h2 class="card-title"><span data-attr="location"></span> <span data-attr="date"></span></h1>
+                        <p><img data-attr="weather-today"></p>
+                        <p>Temp: <span data-attr="temperature-today"></span></p>
+                        <p>Wind: <span data-attr="wind-today"></span></p>
+                        <p>Humidity: <span data-attr="humidity-today"></span></p>
+                        <p>UV Index: <span class="badge" data-attr="uv-today">3</span></p>
+                    </div>
+                </div>
+                <h2 class="m-3">5 day forecast</h2>
+                <div id="5-day-forecast" class="d-flex flex-column flex-md-row flex-wrap">                    
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-0"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-0"></h4>
+                            <p><img class="centred-img" data-attr="weather-0"></p>
+                            <p>Temp: <span data-attr="temperature-0"></span></p>
+                            <p>Wind: <span data-attr="wind-0"></span></p>
+                            <p>Humidity: <span data-attr="humidity-0"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-1"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-1"></h4>
+                            <p><img class="centred-img" data-attr="weather-1"></p>
+                            <p>Temp: <span data-attr="temperature-1"></span></p>
+                            <p>Wind: <span data-attr="wind-1"></span></p>
+                            <p>Humidity: <span data-attr="humidity-1"></span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-2"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-2"></h4>
+                            <p><img class="centred-img" data-attr="weather-2"></p>
+                            <p>Temp: <span data-attr="temperature-2"></span></p>
+                            <p>Wind: <span data-attr="wind-2"></span></p>
+                            <p>Humidity: <span data-attr="humidity-2"></span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-3"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-3"></h4>
+                            <p><img class="centred-img" data-attr="weather-3"></p>
+                            <p>Temp: <span data-attr="temperature-3"></span></p>
+                            <p>Wind: <span data-attr="wind-3"></span></p>
+                            <p>Humidity: <span data-attr="humidity-3"></span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="card m-1 p-1 col-xl">
+                        <div class="card-body">
+                            <h3 class="card-title" data-attr="day-4"></h3>
+                            <h4 class="card-subtitle mb-2 text-muted" data-attr="date-4"></h4>
+                            <p><img class="centred-img" data-attr="weather-4"></p>
+                            <p>Temp: <span data-attr="temperature-4"></span></p>
+                            <p>Wind: <span data-attr="wind-4"></span></p>
+                            <p>Humidity: <span data-attr="humidity-4"></span></p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </main>
 
     <script src="./assets/js/api.js"></script>
 </body>
