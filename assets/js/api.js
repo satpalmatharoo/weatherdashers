@@ -1,5 +1,6 @@
-var apiKey= "0d7986ede662de9f77df50487eb98a46";
+var apiKey= " ";
 var workingapikey ='https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=0d7986ede662de9f77df50487eb98a46'
+
 //url endpoint for city
 function getApiEndpoint(city) {
     
@@ -34,7 +35,6 @@ function DataTest(weatherData) {
 
 
     
-    S
 } 
 
 testData();
