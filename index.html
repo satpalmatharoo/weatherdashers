@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
 </head>
@@ -13,27 +13,38 @@
         <h1>WeatherDashers</h1>
 
         <section class="container">
-            <div class="row">
+           <div class="row">
             <div class="col-md-3"></div>
             <h2 id="section heading">City Selection</h2>
-            <form id="city selection form">
-              <label for="city-selection input">Please enter a city</label>
-              <input id="city-selection input" type="text"/>
-              <button>Get the Weather</button>
+            <form id="cityselectionform">
+              <label for="city-selection-input">Please enter a city</label>
+              <input id="city-selection" type="text"/>
+              <input type="submit" value="Search">
+              
             </form>
-        </div>
-
-        <div class"col-sm-12 col-md-6">Col One</div>
-        <div class"col-sm-12 col-md-6">Col Two</div>
-
         </section>
-    </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <section id="todaysWeatherCard">
+          <h2> Todays Weather in <span id="htmlCity"> waiting for Search</span></h2>
+          <section>
+              <p> the temperature is <span id="temp">loading</span>C</p>
+              <p> the humidity is <span id="humidity">loading</span></p>
+              <p>the windspeed is <span id="wind">loading</span></p>
+              <p> the weather Conditions are</p>
+              <img id="imgCon" src="" alt="">
+              
+              <p>the UV index is <span id="uv">loading</span></p>
+              
+            </section>
+              
+        </section>
+            
+
+
+
+
+    
     <script src="./assets/js/api.js"></script>
-</body>
-</html>
-
 </body>
 </html>
 
