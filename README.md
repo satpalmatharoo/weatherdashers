@@ -1,17 +1,16 @@
-# weatherdashers
-App which allows the user to check weather information in a certain area.
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+# WEATHERDASHERS
 
-## Third Party API
-[OpenWeather One Call API](https://openweathermap.org/api/one-call-api)
+# DESCRIPTION
+App which allows the user to check weather information in a certain area.  The user is presented weather conditions, temperature amongst various data results.
 
-## User Story
+# USAGE
+Uses the OpenWeather One Call API to retrieve weather data for cities. 
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+
+# Repo on Github:
+
+## Screenshot
+
 
 ## Acceptance Criteria
 
