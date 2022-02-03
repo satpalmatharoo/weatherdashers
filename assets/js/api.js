@@ -62,14 +62,14 @@ var weatherIcon = "http://openweathermap.org/img/w/"+icon+".png"
     var tempRender = document.getElementById("temp");
     var humRender = document.getElementById("humidity");
     var windRender = document.getElementById("wind");
-    var ConidtionsRender = document.getElementById("imgCon");
+    var ConditionsRender = document.getElementById("imgCon");
     var uvRender = document.getElementById("uv")
 
     // render
     tempRender.innerText = temp
     humRender.innerText = humidity
     windRender.innerText = wind
-    ConidtionsRender.src = weatherIcon
+    ConditionsRender.src = weatherIcon
 
 
 
