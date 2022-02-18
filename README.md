@@ -10,5 +10,6 @@ Uses the OpenWeather One Call API to retrieve weather data for cities.
 # Repo on Github:
 
 ## Screenshot
+![Screenshot (38)](https://user-images.githubusercontent.com/84681197/154607873-548fa46c-1e7b-4022-9728-11afdb792df3.png)
 
 
